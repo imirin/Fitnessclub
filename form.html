@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+        background-color: yellow;
+        height: 100px;
+        }
+        .logo>a{
+            float: right;
+            margin-top: 35px;
+            margin-right: 30px;
+            color: black;
+            font-size: larger;
+            text-decoration: none;
+        }
+        body{
+        background-color: rgb(44, 44, 44);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        label{
+            color: whitesmoke;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        .d{
+            display: flex;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+        li{
+            color: white;
+        }
+        .sub{
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+        }
+        .sub>p>a{
+            color: whitesmoke;
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 5px;
+        }
+        form{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <div class="navbar">
+        <div class="logo">
+        <a href="trainer.html"><b>Trainers</b></a>
+        <a href="membership.html"><b>Membership</b></a>
+        <a href="index.html"><b>Home</b></a>
+        </div class=image">
+            <img src="logo.jpeg" alt="Logo" height="100px">
+        </div>
+        </div>
+    </nav>
+    <br>
+    <h2 style="color:whitesmoke; text-align: center;">Ready to Transform Your Body?</h2>
+    <h3 style="color:whitesmoke; text-align: center;">Join ONYX Fitness Club today — where strength meets support. Fill out the form and start your fitness journey now!</h3>
+    <br>
+    <h2 style="text-align: center; color: yellow; font-size: 40px;">Fill to Fuel Up!</h2><br>
+    <br><br><br><br><br>
+    <div class="d">
+    <form>
+        <ul>
+        <li><label for="name">Full Name:</label></li>
+        <input type="text" id="name" placeholder="Enter your name">
+        <br><br>
+        <li><label for="email">Email:</label></li>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <br><br>
+        <li><label for="password">Passowrd:</label></li>
+        <input type="password" name="password" placeholder="Enter your password">
+        <br><br>
+        <li><label>Select the plan:</label></li>
+        <select id="membership" name="membership">
+        <option value="basic">Basic</option>
+        <option value="premium">Pro</option>
+        <option value="vip">Elite</option>
+    </select>
+    </ul>
+    <div class="sub"><p><a href="index.html">Submit</a></p></div>
+    </form>
+    </div>
+</body>
+</html>

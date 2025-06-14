@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(44, 44, 44);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.head{
+    position: sticky;
+}
+.main{
+    background-image: url(g3.jpeg);
+}
+h1{
+    color: whitesmoke;
+    margin-top: 120px;
+     margin-left: 25px;
+     margin-right: 25px;
+}
+.p1{
+    color: whitesmoke;
+    font-size: larger;
+    margin-right: 40%;
+    margin-left: 25px;
+}
+.b1{
+    background-color: rgb(44, 44, 44);;
+    color: whitesmoke;
+    gap: 10px;
+    margin-left: 30%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger
+}
+.p2{
+    color: whitesmoke;
+    font-size: larger;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+li{
+    color: whitesmoke;
+    font-size: larger;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.b2{
+    background-color: rgb(44, 44, 44);;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+.navi{
+    color: white;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box{
+    height: 250px;
+    width: 350px;
+    display: flex;
+    flex-direction: rows
+}
+.box>img{
+    border: 1px solid yellow;
+    border-radius: 5%;
+}
+.navbar{
+    background-color: yellow;
+    height: 100px;
+}
+.logo>a{
+    float: right;
+    margin-top: 35px;
+    margin-right: 30px;
+    color: black;
+    font-size: larger;
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.main2>img{
+    height: 500px;
+    width: 500px;
+    margin-top: 100px;
+}
+.but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}
+.but>p>b>a{
+    color: whitesmoke;
+    text-decoration: none;
+    border: 2px solid rgb(253, 245, 125);
+    padding: 3px;
+    border-radius: 10%
+}
+.foot>a{
+    margin-top: 35px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.foot{
+    color: whitesmoke;
+}
