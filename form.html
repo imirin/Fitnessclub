@@ -1,96 +1,128 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .navbar{
-        background-color: yellow;
-        height: 100px;
-        }
-        .logo>a{
-            float: right;
-            margin-top: 35px;
-            margin-right: 30px;
-            color: black;
-            font-size: larger;
-            text-decoration: none;
-        }
-        body{
-        background-color: rgb(44, 44, 44);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        label{
-            color: whitesmoke;
-            font-size: larger;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            
-        }
-        .d{
-            display: flex;
-            height: 100px;
-            align-items: center;
-            justify-content: center;
-        }
-        li{
-            color: white;
-        }
-        .sub{
-            color: whitesmoke;
-            display: flex;
-            justify-content: center;
-        }
-        .sub>p>a{
-            color: whitesmoke;
-            text-decoration: none;
-            border: 1px solid white;
-            padding: 5px;
-        }
-        form{
-            font-size: larger;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> 
+  <style>
+    .navbar {
+      background-color: yellow;
+      height: 100px;
+    }
+
+    .logo>a {
+      float: right;
+      margin-top: 35px;
+      margin-right: 30px;
+      color: black;
+      font-size: larger;
+      text-decoration: none;
+    }
+
+    body {
+      background-color: rgb(44, 44, 44);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    label {
+      color: whitesmoke;
+      font-size: larger;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .d {
+      display: flex;
+      height: 100px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li {
+      color: white;
+    }
+
+    .sub {
+      color: whitesmoke;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sub > p > a {
+      color: whitesmoke;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 5px;
+    }
+
+    form {
+      font-size: larger;
+    }
+  </style>
 </head>
 <body>
-    <nav>
+  <nav>
     <div class="navbar">
-        <div class="logo">
+      <div class="logo">
         <a href="trainer.html"><b>Trainers</b></a>
         <a href="membership.html"><b>Membership</b></a>
         <a href="index.html"><b>Home</b></a>
-        </div class=image">
-            <img src="logo.jpeg" alt="Logo" height="100px">
-        </div>
-        </div>
-    </nav>
-    <br>
-    <h2 style="color:whitesmoke; text-align: center;">Ready to Transform Your Body?</h2>
-    <h3 style="color:whitesmoke; text-align: center;">Join ONYX Fitness Club today — where strength meets support. Fill out the form and start your fitness journey now!</h3>
-    <br>
-    <h2 style="text-align: center; color: yellow; font-size: 40px;">Fill to Fuel Up!</h2><br>
-    <br><br><br><br><br>
-    <div class="d">
-    <form>
-        <ul>
-        <li><label for="name">Full Name:</label></li>
-        <input type="text" id="name" placeholder="Enter your name">
-        <br><br>
-        <li><label for="email">Email:</label></li>
-        <input type="email" name="email" id="email" placeholder="Enter your email">
-        <br><br>
-        <li><label for="password">Passowrd:</label></li>
-        <input type="password" name="password" placeholder="Enter your password">
-        <br><br>
-        <li><label>Select the plan:</label></li>
-        <select id="membership" name="membership">
-        <option value="basic">Basic</option>
-        <option value="premium">Pro</option>
-        <option value="vip">Elite</option>
-    </select>
-    </ul>
-    <div class="sub"><p><a href="index.html">Submit</a></p></div>
-    </form>
+      </div class=image">
+      <img src="logo.jpeg" alt="Logo" height="100px">
     </div>
+  </nav>
+
+  <br>
+  <h2 style="color:whitesmoke; text-align: center;">Ready to Transform Your Body?</h2>
+  <h3 style="color:whitesmoke; text-align: center;">
+    Join ONYX Fitness Club today — where strength meets support.
+    Fill out the form and start your fitness journey now!
+  </h3>
+  <br>
+  <h2 style="text-align: center; color: yellow; font-size: 40px;">Fill to Fuel Up!</h2>
+  <br><br><br><br><br>
+
+  <div class="d">
+    <div class="container mt-5">
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password">
+        </div>
+
+        <div class="mb-4">
+          <label for="membership" class="form-label">Select the Plan:</label>
+          <select class="form-select" id="membership" name="membership">
+            <option value="basic">Basic</option>
+            <option value="premium">Pro</option>
+            <option value="vip">Elite</option>
+          </select>
+        </div>
+
+        <div class="text-center">
+          <a href="trainer.html" class="btn btn-primary" onclick="showSuccess()">Submit</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <br><br>
+  <br>
+  <script>
+    function showSuccess() {
+      alert("Successfully Registered!\nTime to know more about our trainers.");
+
+    }
+  </script>
 </body>
 </html>
